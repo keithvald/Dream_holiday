@@ -1,0 +1,31 @@
+Mémo pour l'équipe
+------------------
+
+Liste de Polices que l'on utilise :
+
+TITRE -->                           Police : Note Worthy (https://www.cufonfonts.com/font/noteworthy)           couleur : #00FF84
+
+TEXTE DIAPO-FOOTER -->              Police : Xanh Mono (https://fonts.google.com/specimen/Xanh+Mono?query=x)    couleur : #FFFFFF / #000000
+
+TEXTE GENERAL -->                   Police : Georgia (https://www.cufonfonts.com/font/georgia-2)                couleur : #FFFFFF / #000000
+
+
+___________________________________________________________________________________________________________________________________________
+
+Liste de lettres à accents en MAJUSCULE :
+
+À (a majuscule accent) = Alt+0192
+
+É (e majuscule accent aigu) =Alt+0201
+
+Ç (c cédille majuscule) = Alt+0199
+________________________________________________
+
+
+Ajouter du texte pour chaque destinations 
+
+ex : Le nom de «Miami» vient d'un mot amérindien qui signifie «eau douce», et c'est par ces eaux douces que vous profiterez de tours en Speed board etc...
+
+__________________________________________________________________________________________________________________________________________________________
+
+

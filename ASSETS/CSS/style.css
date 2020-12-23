@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+
+@font-face {
+  font-family: 'Noteworthy Light';
+  src: url('../FONT/Noteworthy-Lt.woff');
+}
+
+@font-face {
+  font-family: 'Xanh Mono';
+  src: url('XanhMono-Regular.ttf');
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  background-color: #f4f3f4;
+  scroll-behavior: smooth;
+}
+/*--------------------------------------------BODY---------------------------------------------*/
+
+* {
+  margin: 0;
+}
+
+/*---------------------------------------NAVIGATION----------------------------------------*/
+
+/*----------LOGO ET ICON-----------*/
+
+#logocontainer .title /*Aligne le logo et l'intitulé*/ {
+  display: inline-block;
+}
+
+.dream /*Aligne verticalement*/ {
+  font-size: 3em;
+  font-family: 'Noteworthy Light';
+  letter-spacing: 2px;
+  position: relative;
+  top: -17px;
+}
+
+.logo /*Réduit la taille initiale du logo*/ {
+  width: 90px;
+  cursor: pointer;
+}
+
+.icon /*Positionne et commande la taille des icons*/ {
+  width: 24px;
+  position: relative;
+  top: 4px;
+}
+
+/*--------------NAVITATION----------------*/
+
+nav {
+  background-color: #47e196;
+  color: white;
+  display: flex;
+  justify-content: space-between; /*Place le logo à gauche et la navigation à droite*/
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+nav ul /**/ {
+  list-style: none;
+}
+
+nav ul li /*Aligne les block*/ {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav li a /*Personnalise le texte dans les block*/ {
+  text-decoration: none;
+  font-family: 'Noteworthy Light';
+  color: white;
+  font-size: 23px;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul div.items a:hover /*Apparition de bordures au passage de la souris*/ {
+  border: solid;
+  border-width: thin;
+  border-color: white;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+}
+
+/*------------MENU-BURGER------------*/
+
+.burger {
+  display: none;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 2em;
+}
+
+
+
+/*-----------NAV REPONSIVE----------*/
+
+@media screen and (max-width: 1024px) {
+  .items {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  body {
+    overflow-x: hidden;
+  }
+  .items {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 13vh;
+    background-color: #47e196;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: none;
+    transition: all 0.5s ease-out;
+    z-index: 1000;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .dream {
+    font-size: 2em;
+    top: -25px;
+  }
+}
+
+@media only screen and (max-width:400px){
+  
+  .dream {
+    font-size: 1em;
+    top : -15px;
+  }
+
+  .logo {
+    width: 50px;
+    top : 100px;
+  }
+
+  .burger {
+    font-size: 2em;
+  }
+
+
+}
+
+.nav-active {
+  transform: translate(0%);
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*-----------------------------------------/NAVIGATION---------------------------------------------------*/
+
+/*--------------------------------------------DIAPO------------------------------------------------------*/
+
+/* STYLE General Des flex marge ETC .. */
+main {
+  width: 100%;
+  margin: auto;
+  background-size: cover;
+}
+
+.diapo {
+  width: 100%;
+  max-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.65);
+  background-size: cover;
+  background-position: center;
+}
+
+/* FLECHE Style etc  */
+
+#nav-droite,
+#nav-gauche {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3em;
+  transition: all 0.5s ease-out;
+}
+
+.diapo:hover #nav-droite {
+  opacity: 0.7;
+}
+
+.diapo:hover #nav-gauche {
+  opacity: 0.7;
+}
+
+#nav-droite {
+  right: 20px;
+}
+#nav-gauche {
+  left: 20px;
+}
+
+/* CONTENU DIAPO  */
+.elements {
+  display: flex;
+  transition: 1s linear;
+}
+
+.element {
+  flex: 1 0 100%;
+  position: relative;
+  vertical-align: middle;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.element > img {
+  width: 100%;
+  height: 600px;
+  vertical-align: middle;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+/* TITRE DANS LE DIAPO Dream Holiday plus exte Modif */
+
+.caption {
+  /* border: green dotted 3px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+}
+
+.caption > p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0),
+    0 0 0.2em rgb(0, 0, 0);
+  margin: 2%;
+}
+
+.caption > h2 {
+  text-decoration: underline;
+  font-family: 'Xanh Mono', monospace;
+  font-weight: 900;
+  font-size: 5em;
+  color: #ffffff;
+  text-shadow: -3px -3px 0px #000000;
+}
+
+/* MEDIA RESPONSIF */
+@media (max-width: 1070px) {
+  .caption > p {
+    font-size: 2em;
+  }
+  .caption > h2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 780px) {
+  .caption > p {
+    font-size: 1.4em;
+  }
+  .caption > h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 510px) {
+  .caption > p {
+    font-size: 1em;
+  }
+  .caption > h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .caption > p {
+    font-size: 1em;
+  }
+  .caption > h2 {
+    font-size: 1.4em;
+  }
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Destinations choices */
+
+.destination-title {
+  width: 90vw;
+  font-size: 3em;
+  position: relative;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.destination-title::before {
+  content: '';
+  position: absolute;
+  background-color: #00ff84;
+  width: 120px;
+  height: 5px;
+  bottom: -2px;
+}
+
+.best-destination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.destination-box {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 400px;
+  -webkit-box-shadow: 4px 5px 11px 0px black;
+  box-shadow: 4px 5px 11px 0px black;
+  margin-top: 50px;
+  transition-duration: 1s;
+  position: relative;
+}
+
+.destination-box:hover {
+  -webkit-transform: scale(1.25); /* Safari et Chrome */
+  -moz-transform: scale(1.25); /* Firefox */
+  -ms-transform: scale(1.25); /* Internet Explorer 9 */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+  transition-duration: 1s;
+}
+
+.image-box {
+  width: 100%;
+  height: 50%;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.text-box {
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h4,
+title {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.button {
+  align-self: flex-end;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  background-color: #00ff84;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px 0 0;
+}
+
+.button::before {
+  content: 'Lire la suite';
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.destination-box:hover .button {
+  opacity: 1;
+}
+
+p.text {
+  font-size: 0.8em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+  .destination-box {
+    width: 40vw;
+  }
+
+  .destination-box:hover {
+    -webkit-transform: scale(1.2); /* Safari et Chrome */
+    -moz-transform: scale(1.2); /* Firefox */
+    -ms-transform: scale(1.2); /* Internet Explorer 9 */
+    -o-transform: scale(1.2); /* Opera */
+    transform: scale(1.2);
+    transition-duration: 1s;
+  }
+
+  .destination-box:last-child {
+    margin-left: 25vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .best-destination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-box {
+    width: 50vw;
+  }
+
+  .destination-box:last-child {
+    margin-left: 0;
+  }
+
+  .destination-title {
+    font-size: 2em;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .destination-box {
+    width: 95%;
+    height: 40vh;
+  }
+
+  .destination-title {
+    font-size: 2em;
+  }
+
+  .text-box {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .button::before {
+    font-size: 10px;
+  }
+
+  .destination-title:before {
+    display: none;
+  }
+}
+
+/*-------------------------------------------------CONTACT------------------------------------------------*/
+
+#contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: url('../IMAGES/Kancun/vacance.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  box-shadow: 0px 0px 13px 2px;
+  border: 2px solid black;
+  padding-bottom: 20px;
+  width: 380px;
+  height: 330px;
+  background: white;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 6%;
+}
+
+.contact_me {
+  font-family: georgia;
+  font-size: 28px;
+}
+
+.dream_holiday_contact {
+  font-family: 'Xanh Mono';
+  font-size: 28px;
+}
+
+.adresse {
+  font-family: georgia;
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mail a {
+  font-family: georgia;
+  color: black;
+}
+
+@media only screen and (max-width:450px){
+
+  .contact {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact_me {
+    font-family: georgia;
+    font-size: 0.8em;
+  }
+  
+  .dream_holiday_contact {
+    font-family: 'Xanh Mono';
+    font-size: 1em;
+  }
+  
+  .adresse {
+    font-family: georgia;
+    line-height: 25px;
+    font-size: 0.8em;
+  }
+
+  .mail a {
+    font-size: 0.8em;
+  }
+
+}
+
+/*--------------------------------------------------/CONTACT-----------------------------------------------*/
+
+/*---------------------------------------------------FOOTER-----------------------------------------------*/
+
+footer {
+  background-color: #424242;
+  max-width: 100%;
+  height: 180px;
+  padding-top: 10px;
+  bottom: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*Titre Principal*/
+
+.principal {
+  font-family: 'Xanh Mono', monospace;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.principal::before {
+  content: '';
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  width: 15%;
+  height: 2px;
+  bottom: -5px;
+  margin-left: 30px;
+}
+
+hr {
+  width: 150px;
+  margin-bottom: 60px;
+}
+
+/*Eléments*/
+
+p.footer {
+  font-family: georgia;
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/*Liens*/
+
+.nav {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+@media only screen and (max-width:500px){
+
+  .principal {
+    font-size: 1.5em;
+  }
+
+  .nav {
+    font-size: 1em;
+  }
+
+  P.footer{
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width:400px){
+
+  
+  .nav {
+    flex-direction: column;
+    font-size: 0.8em;
+    justify-content: space-around;
+    height: 10vh;
+  }
+}

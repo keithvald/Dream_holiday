@@ -1,0 +1,127 @@
+METRE MAP FIN ---------------------------------/DESCRITION------------------------------------------
+
+
+Mykonos 
+
+<!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28812.82536202988!2d25.32490015318924!3d37.44874575951227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a2bf06bf0fdd37%3A0xfaa85debe77b7a44!2sMikonos%20846%2000%2C%20Gr%C3%A8ce!5e0!3m2!1sfr!2sfr!4v1606318811347!5m2!1sfr!2sfr"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    
+    
+    
+    
+    Ibiza
+    
+    <!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24837.826818133482!2d1.4121382725934795!3d38.90732689240095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129946bc6d9d1985%3A0xb6ca1af29357fa88!2s07800%20Ibiza%2C%20Bal%C3%A9ares%2C%20Espagne!5e0!3m2!1sfr!2sfr!4v1606317329073!5m2!1sfr!2sfr"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    
+    
+    
+
+Amster dam 
+ 
+ <!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.8924297995!2d4.763878108967292!3d52.354582834316005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Pays-Bas!5e0!3m2!1sfr!2sfr!4v1606375716172!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    
+    
+    
+    RIO
+    
+     <!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470398.21558861504!2d-43.726184650272685!3d-22.91388503320476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20%C3%89tat%20de%20Rio%20de%20Janeiro%2C%20Br%C3%A9sil!5e0!3m2!1sfr!2sfr!4v1606375865873!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    
+    
+    
+    Las Vegas 
+    
+    <!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412508.1861653707!2d-115.45519571138182!3d36.1246737438142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20Nevada%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1606375937581!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    TOKYO
+    
+    <!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d533494.6291569755!2d139.4317449260064!3d35.727856516974214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sTokyo%2C%20Japon!5e0!3m2!1sfr!2sfr!4v1606319111906!5m2!1sfr!2sfr"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+   
+   
+    
+    
+    Cancun
+    
+    <!-- ----------------------------------------------------MAP ---------------------------------------->
+
+    <div class="container_center">
+      <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124247.58295235818!2d-86.89085158141444!3d21.128632535625858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b05aef653db%3A0xce32b73c625fcd8a!2sCanc%C3%BAn%2C%20Quintana%20Roo%2C%20Mexique!5e0!3m2!1sfr!2sfr!4v1606382794833!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    tet fini
+ 
+    
+    
